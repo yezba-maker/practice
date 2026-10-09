@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-header">
+      <h2>Student Registration Form</h2>
+      <p>Please fill out the details below to register a new student.</p>
+    </div>
+
+    <form action="#" method="POST" class="registration-form">
+      
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Details</legend>
+        
+        <div class="form-group row">
+          <div class="col">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Please enter Fname" required>
+          </div>
+          <div class="col">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Please enter Lname" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+          <div class="col">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="" disabled selected>Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Contact Information -->
+      <fieldset>
+        <legend>Contact Details</legend>
+
+        <div class="form-group row">
+          <div class="col">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="" required>
+          </div>
+          <div class="col">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+251 9....." required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Home Address</label>
+          <textarea id="address" name="address" rows="3" placeholder="Enter full address..."></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Academic Information -->
+      <fieldset>
+        <legend>Academic Information</legend>
+
+        <div class="form-group row">
+          <div class="col">
+            <label for="studentId">Student ID</label>
+            <input type="text" id="studentId" name="studentId" placeholder="MAU1601337" required>
+          </div>
+          <div class="col">
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+              <option value="" disabled selected>Select Department</option>
+              <option value="cs">Computer Science</option>
+              <option value="se">Software Engineering</option>
+              <option value="it">Information Technology</option>
+              <option value="ee">Electrical Engineering</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col">
+            <label for="year">Academic Year</label>
+            <select id="year" name="year" required>
+              <option value="" disabled selected>Select Year</option>
+              <option value="1">1st Year</option>
+              <option value="2">2nd Year</option>
+              <option value="3">3rd Year</option>
+              <option value="4">4th Year</option>
+              <option value="5">5th Year</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="program">Program</label>
+            <select id="program" name="program" required>
+              <option value="" disabled selected>Select Program</option>
+              <option value="regular">Regular</option>
+              <option value="extension">Extension</option>
+              <option value="summer">Summer</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Action Buttons -->
+      <div class="form-actions">
+        <button type="reset" class="btn btn-reset">Reset</button>
+        <button type="submit" class="btn btn-submit">Register Student</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
